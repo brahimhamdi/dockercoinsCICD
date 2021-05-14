@@ -1,6 +1,2 @@
-localhost
-[Master]
-192.168.205.10
-[Workers]
-192.168.205.11
-192.168.205.12
+localhost  ansible_ssh_user=root ansible_ssh_pass=root
+192.168.205.10 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
