@@ -1,0 +1,19 @@
+---
+- name: playtest
+  hosts: localhost
+  gather_facts: "no"
+  become: yes
+  become_user: vagrant
+  tasks:
+    - name: config env
+      command: {{ item }}
+      with items:
+        - sudo apt install build-base curl
+        - sudo gem install sinatra
+        - sudo gem install thin
+        - sudo pip install redis
+        - sudo pip install requests
+        - sudo pip install Flask
+        - sudo npm install express
+        - npm install redis
+
