@@ -2,8 +2,6 @@
 - name: playtest
   hosts: localhost
   gather_facts: "no"
-  become: yes
-  become_user: vagrant
   tasks:
     - name: config env
       command: sudo apt install build-base curl
