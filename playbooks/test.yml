@@ -2,8 +2,7 @@
 - name: playtest
   hosts: localhost
   gather_facts: "no"
+  become: yes
   tasks:
     - name: config env
-      command: sudo apt install build-base curl
-      become: yes
-      become_user: lpi
+      command: apt install build-base curl
