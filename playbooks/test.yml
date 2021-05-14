@@ -5,4 +5,4 @@
   become: yes
   tasks:
     - name: config env
-      command: apt install build-base curl
+      command: apt install build-essential curl
