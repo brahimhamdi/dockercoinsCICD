@@ -1,8 +1,8 @@
-apk add --update build-base curl
-gem install sinatra
-gem install thin
-pip install redis
-pip install requests
-pip install Flask
-npm install express
-npm install redis
+sudo apt install build-base curl
+sudo gem install sinatra
+sudo gem install thin
+sudo pip install redis
+sudo pip install requests
+sudo pip install Flask
+sudo npm install express
+sudo npm install redis
