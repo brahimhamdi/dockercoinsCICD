@@ -3,6 +3,7 @@
   hosts: localhost
   gather_facts: "no"
   become: yes
+  connection: local
   tasks:
     - name: config env
       command: apt install build-essential curl
